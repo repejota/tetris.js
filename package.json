@@ -1,0 +1,24 @@
+{
+  "name": "tetris",
+  "version": "0.1.0",
+  "description": "A tetris clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/repejota/tetris"
+  },
+  "keywords": [
+    "tetris",
+    "game",
+    "clone"
+  ],
+  "author": "Raül Pérez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/repejota/tetris/issues"
+  },
+  "homepage": "https://github.com/repejota/tetris"
+}

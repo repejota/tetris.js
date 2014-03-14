@@ -1,0 +1,164 @@
+/*
+//
+// BEGIN LICENSE BLOCK
+//
+// The MIT License (MIT)
+//
+// Copyright (c) 2014 Raül Pérez
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy of
+// this software and associated documentation files (the "Software"), to deal in
+// the Software without restriction, including without limitation the rights to
+// use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+// the Software, and to permit persons to whom the Software is furnished to do so,
+// subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// END LICENSE BLOCK
+//
+*/
+
+/* Normalize */
+
+#tetris * {
+	background-color: transparent;
+	border: none;
+	font-size: 1em;
+	font-weight: inherit;
+	font-family: 'Trebuchet MS', Verdana, Arial;
+	line-height: 1.4em;
+	list-style: none inside;
+	margin: 0;
+	padding: 0;
+	text-align: inherit;
+	text-decoration: none;
+}
+
+/* Main */
+
+#tetris {
+	text-align: center;
+	padding-top: .5em;
+}
+
+	#tetris a:link, #tetris a:hover, #tetris a:active, #tetris a:visited {
+		color: #202;
+		text-decoration: underline;
+	}
+
+	#tetris strong {
+		font-weight: bold;
+	}
+
+	#tetris .clear {
+		clear: both;
+	}
+
+#tetris-wrap {
+	margin: 2em auto 0 auto;
+	position: relative;
+	text-align: right;
+	width: 456px;
+}
+
+	#tetris-wrap-inner {
+		border: 2px solid #313;
+		margin-bottom: .2em;
+	}
+
+#tetris-main, #tetris-overlay, #tetris-side {
+	height: 600px;
+}
+
+#tetris-main, #tetris-overlay {
+	width: 300px;
+}
+
+#tetris-main {
+	background: #202;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+#tetris-overlay {
+	position: absolute;
+}
+
+#tetris-message {
+	font-size: 2em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+	#tetris-message p {
+		color: #FFF;
+		padding: .5em;
+	}
+
+		#tetris-message p span {
+			display: block;
+			font-size: .5em;
+			font-style: italic;
+			text-transform: none;
+		}
+
+#tetris-side {
+	background: #313;
+	color: #FFF;
+	float: right;
+	text-align: left;
+	width: 152px;
+}
+
+	#tetris-side-inner {
+		padding: 16px;
+	}
+
+	#tetris-side dl {
+		clear: both;
+	}
+
+	#tetris-side dt {
+		float: left;
+	}
+
+	#tetris-side dd {
+		float: right;
+		font-family: Georgia, serif;
+	}
+
+		dd#tetris-level, dd#tetris-score {
+			margin-bottom: 1em;
+		}
+
+#tetris-next {
+	background: #202;
+	position: relative;
+	height: 120px;
+	margin-bottom: 1em;
+	width: 120px;
+}
+
+	#tetris-next-inner {
+		padding: 1em;
+	}
+
+#tetris-keys {
+	color: #979;
+	font-size: .8em;
+	margin-top: 1em;
+}
+
+#tetris-copyright {
+	font-size: .8em;
+}

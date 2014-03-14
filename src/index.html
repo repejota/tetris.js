@@ -1,0 +1,123 @@
+<!--
+//
+// BEGIN LICENSE BLOCK
+//
+// The MIT License (MIT)
+//
+// Copyright (c) 2014 Raül Pérez
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy of
+// this software and associated documentation files (the "Software"), to deal in
+// the Software without restriction, including without limitation the rights to
+// use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+// the Software, and to permit persons to whom the Software is furnished to do so,
+// subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// END LICENSE BLOCK
+//
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tetris</title>
+    <link type="text/css" rel="stylesheet" href="css/tetris.css"/>
+<head>
+
+<body>
+<div id="tetris">
+    <div id="tetris-wrap">
+        <div id="tetris-wrap-inner">
+            <div id="tetris-main">
+            </div>
+            <div id="tetris-overlay">
+                <div id="tetris-message"></div>
+            </div>
+            <div id="tetris-side">
+                <div id="tetris-side-inner">
+                    <div id="tetris-next">
+                        <div id="tetris-next-inner"></div>
+                    </div>
+                    <div id="tetris-scores">
+                        <dl>
+                            <dt>Level:</dt>
+                            <dd id="tetris-level">1</dd>
+                        </dl>
+                        <dl>
+                            <dt>Score:</dt>
+                            <dd id="tetris-score">0</dd>
+                        </dl>
+                        <dl>
+                            <dt>Singles:</dt>
+                            <dd id="tetris-singles">0</dd>
+                        </dl>
+                        <dl>
+                            <dt>Doubles:</dt>
+                            <dd id="tetris-doubles">0</dd>
+                        </dl>
+                        <dl>
+                            <dt>Triples:</dt>
+                            <dd id="tetris-triples">0</dd>
+                        </dl>
+                        <dl>
+                            <dt>Tetris:</dt>
+                            <dd id="tetris-quads">0</dd>
+                        </dl>
+
+                        <div class="clear"></div>
+                    </div>
+                    <div id="tetris-keys">
+                        <dl>
+                            <dt>Move:</dt>
+                            <dd>&larr; &darr; &rarr;<dd>
+                        </dl>
+                        <dl>
+                            <dt>Rotate:</dt>
+                            <dd>&uarr;<dd>
+                        </dl>
+                        <dl>
+                            <dt>Drop:</dt>
+                            <dd>Spacebar<dd>
+                        </dl>
+                        <dl>
+                            <dt>Pause:</dt>
+                            <dd>Pause/Esc<dd>
+                        </dl>
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/tetris.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    -->
+</div>
+
+</body>
+</html>

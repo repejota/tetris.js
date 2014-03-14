@@ -48,10 +48,19 @@ module.exports = function (grunt) {
             }
         },
 
+        csslint: {
+            options: {
+                csslintrc: '.csslintrc'
+            },
+            build: {
+                src: ['src/css/**/*.css']
+            }
+        },
+
         sass: {
             build: {
                 files: {
-                    "./src/css/tetris.css": "./src/sass/main.scss"
+                    "src/css/tetris.css": "src/sass/main.scss"
                 }
             }
         },
@@ -70,7 +79,8 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:build',
         'jshint:build',
-        'sass:build'
+        'sass:build',
+        'csslint:build'
     ]);
 
     // Default task

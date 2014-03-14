@@ -29,7 +29,7 @@ module.exports = function (grunt) {
     "use strict";
 
     // load all grunt tasks
-    var matchdep = require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
     // Configuration tasks
     grunt.initConfig({

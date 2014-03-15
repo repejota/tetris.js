@@ -25,10 +25,55 @@
 // END LICENSE BLOCK
 //
 
-@mixin disable-select {
-    -webkit-touch-callout:none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.tetris-side {
+    background: $purple;
+    color: $white;
+    float: right;
+    text-align: left;
+    width: 152px;
+    height: 600px;
+    @include disable-select;
+}
+
+.tetris-side-inner {
+    padding: 16px;
+}
+
+.tetris-side dl {
+    clear: both;
+}
+
+.tetris-side dt {
+    float: left;
+    cursor:default;
+}
+
+.tetris-side dd {
+    float: right;
+    font-family: Georgia, serif;
+    cursor:default;
+    margin: 0;
+}
+
+.tetris-level,
+.tetris-score {
+    margin-bottom: 1em;
+}
+
+.tetris-next {
+    background: $purpledark;
+    position: relative;
+    height: 120px;
+    margin-bottom: 1em;
+    width: 120px;
+}
+
+.tetris-next-inner {
+    padding: 1em;
+}
+
+.tetris-keys {
+    color: $purplelight;
+    font-size: .8em;
+    margin-top: 1em;
 }

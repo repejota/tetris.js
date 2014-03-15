@@ -70,7 +70,20 @@ module.exports = function (grunt) {
                 files: [
                     {
                         dot: true,
-                        src: ['./src/css']
+                        src: ['./src/css', '.sass-cache']
+                    }
+                ]
+            }
+        },
+
+        copy: {
+            build: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'src/',
+                        src: ['**', '!sass/**'],
+                        dest: 'build/'
                     }
                 ]
             }
@@ -82,7 +95,8 @@ module.exports = function (grunt) {
         'clean:build',
         'jshint:build',
         'sass:build',
-        'csslint:build'
+        'csslint:build',
+        'copy:build'
     ]);
 
     // Default task

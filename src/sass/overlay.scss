@@ -25,10 +25,30 @@
 // END LICENSE BLOCK
 //
 
-@mixin disable-select {
-    -webkit-touch-callout:none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.tetris-overlay {
+    width: 300px;
+    position: absolute;
+    @include disable-select;
+}
+
+.tetris-message {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $purpledarkest;
+    opacity: .95;
+}
+
+.tetris-message p {
+    color: $white;
+    padding: .5em;
+    margin: 0;
+    cursor:default;
+}
+
+.tetris-message p span {
+    display: block;
+    font-size: .5em;
+    font-style: italic;
+    text-transform: none;
 }

@@ -148,7 +148,7 @@ module.exports = function (grunt) {
 
         watch: {
             js: {
-                files: ['src/js/**/*.js'],
+                files: ['src/js/**/*.js', 'Gruntfile.js'],
                 tasks: ['jshint:build', 'uglify:build', 'copy:build'],
                 options: {
                     interrupt: true

@@ -39,48 +39,38 @@ tetris.updateScore = function (lines) {
     'use strict';
 
     var oldScore = tetris.score;
-
     if (lines) {
         tetris.score += lines * lines + lines * 10;
     }
 
     var i;
-
     for (i = oldScore; i < tetris.score; i++) {
         setTimeout('document.getElementById(\'tetris-score\').innerHTML = \'' + i + '\';', ( i - oldScore ) * 20);
     }
 
     tetris.level = Math.floor(tetris.score / tetris.levelUpScore) + 1;
-
     document.getElementById('tetris-level').innerHTML = tetris.level;
 
     if (lines === 1) {
         tetris.singles++;
-
         document.getElementById('tetris-singles').innerHTML = tetris.singles;
     }
 
     if (lines === 2) {
-        tetris.flashMessage('<p class="tetris-double">Double!</p>');
-
+        tetris.flashMessage(tetris.strings.flashDoubleMessage);
         tetris.doubles++;
-
         document.getElementById('tetris-doubles').innerHTML = tetris.doubles;
     }
 
     if (lines === 3) {
-        tetris.flashMessage('<p class="tetris-double">Triple!</p>');
-
+        tetris.flashMessage(tetris.strings.flashTripleMessage);
         tetris.triples++;
-
         document.getElementById('tetris-triples').innerHTML = tetris.triples;
     }
 
     if (lines === 4) {
-        tetris.flashMessage('<p class="tetris-double">Tetris!</p>');
-
+        tetris.flashMessage(tetris.strings.flashTetrisMessage);
         tetris.quads++;
-
         document.getElementById('tetris-quads').innerHTML = tetris.quads;
     }
 };

@@ -207,7 +207,7 @@ tetris.doGameOver = function () {
 
     clearInterval(tetris.intval);
 
-    tetris.message.innerHTML = '<p>Game over <span>Press Spacebar to continue</span></p>';
+    tetris.message.innerHTML = tetris.strings.gameOverMessage;
 
     tetris.gameOver = true;
 };

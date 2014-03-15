@@ -48,7 +48,7 @@ tetris.init = function () {
     tetris.nextWin = document.getElementById('tetris-next-inner');
     tetris.message = document.getElementById('tetris-message');
 
-    tetris.message.innerHTML = '<p>New game <span>Press any key to start</span></p>';
+    tetris.message.innerHTML = tetris.strings.gameNewMessage;
 
     document.onkeydown = tetris.keyListener;
 };

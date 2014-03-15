@@ -65,7 +65,7 @@ tetris.keyListener = function (e) {
                 tetris.paused = !tetris.paused;
 
                 if (tetris.paused) {
-                    tetris.message.innerHTML = '<p>Paused <span>Press Esc to resume</span></p>';
+                    tetris.message.innerHTML = tetris.strings.gamePauseMessage;
                 }
                 else {
                     tetris.message.innerHTML = '';

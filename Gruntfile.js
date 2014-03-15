@@ -67,10 +67,12 @@ module.exports = function (grunt) {
 
         clean: {
             build: {
-                files: [{
-                    dot: true,
-                    src: ['./src/css']
-                }]
+                files: [
+                    {
+                        dot: true,
+                        src: ['./src/css']
+                    }
+                ]
             }
         }
 

@@ -25,6 +25,8 @@
 // END LICENSE BLOCK
 //
 
+@import "mixins/text/selection.scss";
+@import "mixins/color/16colors.scss";
 @import "colors.scss";
 @import "normalize.scss";
 @import "tetris.scss";

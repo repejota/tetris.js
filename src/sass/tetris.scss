@@ -32,13 +32,12 @@
   padding-top: .5em;
 }
 
-.tetris a:link, .tetris a:hover, .tetris a:active, .tetris a:visited {
+.tetris a:link,
+.tetris a:hover,
+.tetris a:active,
+.tetris a:visited {
   color: $purpledark;
   text-decoration: underline;
-}
-
-.tetris strong {
-  font-weight: bold;
 }
 
 .tetris .clear {
@@ -46,7 +45,7 @@
 }
 
 .tetris-wrap {
-  margin: 2em auto 0 auto;
+  margin: 0 auto 0 auto;
   position: relative;
   text-align: right;
   width: 456px;
@@ -57,86 +56,93 @@
   margin-bottom: .2em;
 }
 
-.tetris-main, .tetris-overlay, .tetris-side {
-  height: 600px;
+.tetris-main,
+.tetris-overlay,
+.tetris-side {
+    height: 600px;
+    @include disable-select;
 }
 
-.tetris-main, .tetris-overlay {
-  width: 300px;
+.tetris-main,
+.tetris-overlay {
+    width: 300px;
 }
 
 .tetris-main {
-  background: $purpledark;
-  float: left;
-  overflow: hidden;
-  position: relative;
+    background: $purpledark;
+    float: left;
+    overflow: hidden;
+    position: relative;
 }
 
 .tetris-overlay {
-  position: absolute;
+    position: absolute;
 }
 
 .tetris-message {
-  font-size: 2em;
-  text-align: center;
-  text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $purpledarkest;
+    opacity: .95;
 }
 
 .tetris-message p {
-  color: $white;
-  padding: .5em;
+    color: $white;
+    padding: .5em;
 }
 
 .tetris-message p span {
-  display: block;
-  font-size: .5em;
-  font-style: italic;
-  text-transform: none;
+    display: block;
+    font-size: .5em;
+    font-style: italic;
+    text-transform: none;
 }
 
 .tetris-side {
-  background: $purple;
-  color: $white;
-  float: right;
-  text-align: left;
-  width: 152px;
+    background: $purple;
+    color: $white;
+    float: right;
+    text-align: left;
+    width: 152px;
 }
 
 .tetris-side-inner {
-  padding: 16px;
+    padding: 16px;
 }
 
 .tetris-side dl {
-  clear: both;
+    clear: both;
 }
 
 .tetris-side dt {
-  float: left;
+    float: left;
 }
 
 .tetris-side dd {
-  float: right;
-  font-family: Georgia, serif;
+    float: right;
+    font-family: Georgia, serif;
 }
 
-dd.tetris-level, dd.tetris-score {
-  margin-bottom: 1em;
+.tetris-level,
+.tetris-score {
+    margin-bottom: 1em;
 }
 
 .tetris-next {
-  background: $purpledark;
-  position: relative;
-  height: 120px;
-  margin-bottom: 1em;
-  width: 120px;
+    background: $purpledark;
+    position: relative;
+    height: 120px;
+    margin-bottom: 1em;
+    width: 120px;
 }
 
 .tetris-next-inner {
-  padding: 1em;
+    padding: 1em;
 }
 
 .tetris-keys {
-  color: $purplelight;
-  font-size: .8em;
-  margin-top: 1em;
+    color: $purplelight;
+    font-size: .8em;
+    margin-top: 1em;
 }

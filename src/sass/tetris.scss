@@ -27,74 +27,74 @@
 
 /* Main */
 
-#tetris {
+.tetris {
   text-align: center;
   padding-top: .5em;
 }
 
-#tetris a:link, #tetris a:hover, #tetris a:active, #tetris a:visited {
+.tetris a:link, .tetris a:hover, .tetris a:active, .tetris a:visited {
   color: #202;
   text-decoration: underline;
 }
 
-#tetris strong {
+.tetris strong {
   font-weight: bold;
 }
 
-#tetris .clear {
+.tetris .clear {
   clear: both;
 }
 
-#tetris-wrap {
+.tetris-wrap {
   margin: 2em auto 0 auto;
   position: relative;
   text-align: right;
   width: 456px;
 }
 
-#tetris-wrap-inner {
+.tetris-wrap-inner {
   border: 2px solid #313;
   margin-bottom: .2em;
 }
 
-#tetris-main, #tetris-overlay, #tetris-side {
+.tetris-main, .tetris-overlay, .tetris-side {
   height: 600px;
 }
 
-#tetris-main, #tetris-overlay {
+.tetris-main, .tetris-overlay {
   width: 300px;
 }
 
-#tetris-main {
+.tetris-main {
   background: #202;
   float: left;
   overflow: hidden;
   position: relative;
 }
 
-#tetris-overlay {
+.tetris-overlay {
   position: absolute;
 }
 
-#tetris-message {
+.tetris-message {
   font-size: 2em;
   text-align: center;
   text-transform: uppercase;
 }
 
-#tetris-message p {
+.tetris-message p {
   color: #FFF;
   padding: .5em;
 }
 
-#tetris-message p span {
+.tetris-message p span {
   display: block;
   font-size: .5em;
   font-style: italic;
   text-transform: none;
 }
 
-#tetris-side {
+.tetris-side {
   background: #313;
   color: #FFF;
   float: right;
@@ -102,28 +102,28 @@
   width: 152px;
 }
 
-#tetris-side-inner {
+.tetris-side-inner {
   padding: 16px;
 }
 
-#tetris-side dl {
+.tetris-side dl {
   clear: both;
 }
 
-#tetris-side dt {
+.tetris-side dt {
   float: left;
 }
 
-#tetris-side dd {
+.tetris-side dd {
   float: right;
   font-family: Georgia, serif;
 }
 
-dd#tetris-level, dd#tetris-score {
+dd.tetris-level, dd.tetris-score {
   margin-bottom: 1em;
 }
 
-#tetris-next {
+.tetris-next {
   background: #202;
   position: relative;
   height: 120px;
@@ -131,11 +131,11 @@ dd#tetris-level, dd#tetris-score {
   width: 120px;
 }
 
-#tetris-next-inner {
+.tetris-next-inner {
   padding: 1em;
 }
 
-#tetris-keys {
+.tetris-keys {
   color: #979;
   font-size: .8em;
   margin-top: 1em;

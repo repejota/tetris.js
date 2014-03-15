@@ -70,7 +70,7 @@ module.exports = function (grunt) {
                 files: [
                     {
                         dot: true,
-                        src: ['./src/css', '.sass-cache']
+                        src: ['./src/css', '.sass-cache', 'build']
                     }
                 ]
             }

@@ -25,34 +25,32 @@
 // END LICENSE BLOCK
 //
 
-var tetris = {
-    brickSize: 30,
-    brickBorderSize: 2,
-    mainWinWidth: 10,
-    mainWinHeight: 20,
+var tetris = tetris || {};
 
-    bricks: [],
-    pile: [],
-    pileAnimLine: [],
-    pileAnimDrop: [],
-    gameStart: true,
-    gameOver: false,
-    paused: false,
-    keyPressed: false,
-    shapeCount: 0,
+tetris.mainWinWidth = 10;
+tetris.mainWinHeight = 20;
 
-    init: function () {
-        'use strict';
+tetris.bricks = [];
+tetris.pile = [];
+tetris.pileAnimLine = [];
+tetris.pileAnimDrop = [];
 
-        tetris.mainWin = document.getElementById('tetris-main');
-        tetris.nextWin = document.getElementById('tetris-next-inner');
-        tetris.message = document.getElementById('tetris-message');
+tetris.gameStart = true;
+tetris.gameOver = false;
+tetris.paused = false;
+tetris.keyPressed = false;
+tetris.shapeCount = 0;
 
-        tetris.message.innerHTML = '<p>New game <span>Press any key to start</span></p>';
+tetris.init = function () {
+    'use strict';
 
-        document.onkeydown = tetris.keyListener;
-    }
+    tetris.mainWin = document.getElementById('tetris-main');
+    tetris.nextWin = document.getElementById('tetris-next-inner');
+    tetris.message = document.getElementById('tetris-message');
 
+    tetris.message.innerHTML = '<p>New game <span>Press any key to start</span></p>';
+
+    document.onkeydown = tetris.keyListener;
 };
 
 window.onload = tetris.init;

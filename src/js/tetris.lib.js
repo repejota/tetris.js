@@ -27,6 +27,10 @@
 
 var tetris = tetris || {};
 
+tetris.brickSize = 30;
+
+tetris.brickBorderSize = 2;
+
 tetris.brickLib = {
     0: [
         1, 0, 0, 0,

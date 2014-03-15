@@ -34,7 +34,7 @@
 .tetris a:hover,
 .tetris a:active,
 .tetris a:visited {
-    color: $purpledark;
+    color: $bluedark;
     text-decoration: underline;
 }
 
@@ -50,14 +50,13 @@
 }
 
 .tetris-wrap-inner {
-    border: 2px solid $purple;
-    margin-bottom: .2em;
+    height: 600px;
 }
 
 .tetris-main {
     height: 600px;
     width: 300px;
-    background: $purpledark;
+    background: $bluedark;
     float: left;
     overflow: hidden;
     position: relative;

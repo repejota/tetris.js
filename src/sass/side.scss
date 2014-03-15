@@ -26,11 +26,11 @@
 //
 
 .tetris-side {
-    background: $purple;
+    background: $blue;
     color: $white;
     float: right;
     text-align: left;
-    width: 152px;
+    width: 156px;
     height: 600px;
     @include disable-select;
 }
@@ -61,7 +61,7 @@
 }
 
 .tetris-next {
-    background: $purpledark;
+    background: $bluedark;
     position: relative;
     height: 120px;
     margin-bottom: 1em;
@@ -73,7 +73,7 @@
 }
 
 .tetris-keys {
-    color: $purplelight;
+    color: $bluelight;
     font-size: .8em;
     margin-top: 1em;
 }

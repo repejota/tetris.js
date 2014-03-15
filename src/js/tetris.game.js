@@ -177,7 +177,7 @@ tetris.timeStep = function () {
                         if (tetris.pile[hor][ver2]) {
                             tetris.pileAnimDrop[hor][ver2] = tetris.pile[hor][ver2];
 
-                            setTimeout('tetris.pileAnimDrop[' + hor + '][' + ver2 + '].style.top = ( ' + ver2 + ' + 1 ) * tetris.brickSize + \'px\';', tetris.mainWinWidth * 50);
+                            setTimeout('tetris.pileAnimDrop[' + hor + '][' + ver2 + '].style.top = ( ' + ver2 + ' + 1 ) * tetris.shapeLib.brickSize + \'px\';', tetris.mainWinWidth * 50);
 
                             tetris.pile[hor][ver2 + 1] = tetris.pile[hor][ver2];
                             tetris.pile[hor][ver2] = false;

@@ -57,7 +57,7 @@ tetris.newBrick = function (color, colorLight, colorDark) {
 
     var brick = document.createElement('div');
 
-    brick.setAttribute('style', 'background: ' + color + '; border-color: ' + colorLight + ' ' + colorDark + ' ' + colorDark + ' ' + colorLight + '; border-width: ' + tetris.brickBorderSize + 'px; border-style: solid; height: ' + ( tetris.brickSize - tetris.brickBorderSize * 2 ) + 'px; left: 0; top: 0; width: ' + ( tetris.brickSize - tetris.brickBorderSize * 2 ) + 'px; position: absolute;');
+    brick.setAttribute('style', 'background: ' + color + '; border-color: ' + colorLight + ' ' + colorDark + ' ' + colorDark + ' ' + colorLight + '; border-width: ' + tetris.shapeLib.brickBorderSize + 'px; border-style: solid; height: ' + ( tetris.shapeLib.brickSize - tetris.shapeLib.brickBorderSize * 2 ) + 'px; left: 0; top: 0; width: ' + ( tetris.shapeLib.brickSize - tetris.shapeLib.brickBorderSize * 2 ) + 'px; position: absolute;');
 
     return brick;
 };
@@ -72,7 +72,7 @@ tetris.drawShape = function () {
 
     for (var ver = 0; ver < 4; ver++) {
         for (var hor = 0; hor < 4; hor++) {
-            if (tetris.brickLib[tetris.shapeNum][ver * 4 + hor + tetris.shapeRot * 16]) {
+            if (tetris.shapeLib.catalog[tetris.shapeNum][ver * 4 + hor + tetris.shapeRot * 16]) {
                 tetris.brickPos[brickCount] = {
                     hor: hor + tetris.shapePosHor,
                     ver: ver + tetris.shapePosVer
@@ -93,13 +93,13 @@ tetris.drawShape = function () {
 
         for (i = 0; i < brickCount; i++) {
             tetris.bricks[i] = tetris.newBrick(
-                tetris.brickLib[tetris.shapeNum][64], tetris.brickLib[tetris.shapeNum][65], tetris.brickLib[tetris.shapeNum][66]
+                tetris.shapeLib.catalog[tetris.shapeNum][64], tetris.shapeLib.catalog[tetris.shapeNum][65], tetris.shapeLib.catalog[tetris.shapeNum][66]
             );
 
             tetris.bricks[i].num = tetris.shapeCount;
 
-            tetris.bricks[i].style.left = tetris.brickPos[i].hor * tetris.brickSize + 'px';
-            tetris.bricks[i].style.top = tetris.brickPos[i].ver * tetris.brickSize + 'px';
+            tetris.bricks[i].style.left = tetris.brickPos[i].hor * tetris.shapeLib.brickSize + 'px';
+            tetris.bricks[i].style.top = tetris.brickPos[i].ver * tetris.shapeLib.brickSize + 'px';
         }
 
         for (i = 0; i < brickCount; i++) // Using seperate for-loops to reduce flickering
@@ -135,15 +135,15 @@ tetris.drawNext = function () {
 
     for (var ver = 0; ver < 4; ver++) {
         for (var hor = 0; hor < 4; hor++) {
-            if (tetris.brickLib[tetris.shapeNumNext][ver * 4 + hor + tetris.shapeRotNext * 16]) {
+            if (tetris.shapeLib.catalog[tetris.shapeNumNext][ver * 4 + hor + tetris.shapeRotNext * 16]) {
                 var brick;
 
                 brick = tetris.newBrick(
-                    tetris.brickLib[tetris.shapeNumNext][64], tetris.brickLib[tetris.shapeNumNext][65], tetris.brickLib[tetris.shapeNumNext][66]
+                    tetris.shapeLib.catalog[tetris.shapeNumNext][64], tetris.shapeLib.catalog[tetris.shapeNumNext][65], tetris.shapeLib.catalog[tetris.shapeNumNext][66]
                 );
 
-                brick.style.left = hor * tetris.brickSize + 'px';
-                brick.style.top = ver * tetris.brickSize + 'px';
+                brick.style.left = hor * tetris.shapeLib.brickSize + 'px';
+                brick.style.top = ver * tetris.shapeLib.brickSize + 'px';
 
                 tetris.nextWin.appendChild(brick);
             }

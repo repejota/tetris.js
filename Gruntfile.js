@@ -144,6 +144,23 @@ module.exports = function (grunt) {
                     'dist/js/tetris.js': ['src/js/**/*.js']
                 }
             }
+        },
+
+        watch: {
+            js: {
+                files: ['src/js/**/*.js'],
+                tasks: ['jshint:build', 'uglify:build', 'copy:build'],
+                options: {
+                    interrupt: true
+                }
+            },
+            sass: {
+                files: ['src/sass/**/*.scss'],
+                tasks: ['sass:build', 'csslint:build', 'copy:build'],
+                options: {
+                    interrupt: true
+                }
+            }
         }
 
     });
